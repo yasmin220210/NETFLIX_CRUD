@@ -1,0 +1,48 @@
+{
+  "pessoas": [
+    {
+      "id": "02f4",
+      "nome": "Mogi",
+      "idade": "450",
+      "cpf": "123"
+    },
+    {
+      "nome": "Azulllll",
+      "idade": "89",
+      "cpf": "888",
+      "id": "da80"
+    },
+    {
+      "nome": "Fernandão",
+      "idade": "77",
+      "cpf": "444",
+      "id": "b8dc"
+    },
+    {
+      "nome": "",
+      "idade": "",
+      "cpf": "",
+      "id": "ndMM3HWH2dE"
+    },
+    {
+      "nome": "Yasmin",
+      "idade": "123456789",
+      "cpf": "43038508888",
+      "id": "kpdoe1pBgY4"
+    },
+    {
+      "nome": "Maria",
+      "sobrenome": "",
+      "cpf": "",
+      "email": "",
+      "senha": "123",
+      "rua": "",
+      "cep": "",
+      "cidade": "",
+      "estado": "",
+      "telefone": "",
+      "id": "Zq8hwgB1W7Y"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

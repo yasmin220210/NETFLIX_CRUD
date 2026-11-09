@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN_NETFLIX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <header3>
+        <img src="img/logotipo-da-netflix.jpg" width="450">
+        </header3>
+    <div>
+    <br><br><br><br><br>
+
+    <label for="">Login:</label>
+    <input type="text" placeholder = "Digite o seu usuário" id="inputUsuario">
+
+    <br><br>
+
+    <label for="">Senha:</label>
+    <input type="password" placeholder = "Digite a sua Senha" id="inputSenha">
+
+    <br><br>
+
+     <button onclick="logar()">Entrar</button>
+
+    <p id="erro"></p>
+
+    <a href="post.html" class="botao">Ainda não tem Login? <br>Faça  um cadastro</a>
+
+     <a href="acesso_administrador.html" class="botao">Acesso do Administrador</a>
+
+            <br><br>
+
+            <div id="admin" style="display:none;">
+
+                <h2>LOGIN DO ADMINISTRADOR</h2>
+
+                <label>Usuário:</label>
+                <input type="text" placeholder="Digite o usuário" id="usuarioAdmin">
+
+                <br><br>
+
+                <label>Senha:</label>
+                <input type="password" placeholder="Digite a senha" id="senhaAdmin">
+
+                <br><br>
+
+                <button onclick="entrarAdmin()">Entrar como Administrador</button>
+
+                <p id="erroAdmin"></p>
+
+            </div>
+        </div>
+        
+    </center>
+
+
+
+    <script src="login.js"></script>
+</body>
+</html>
+
+   

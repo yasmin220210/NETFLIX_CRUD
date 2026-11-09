@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATUALIZAR_NETFIX</title>
+</head>
+<body>
+    <script>
+    if (sessionStorage.getItem('administrador') != 'sim') {
+        window.location.href = 'login.html'
+    }
+</script>
+    <center>
+        <img src="img/logotipo-da-netflix.jpg" width="450">
+        <h1>ATUALIZAR</h1>
+        <label>ID:</label>
+        <input type="text" id="identificador" disabled>
+        <br><br>
+        <label>CPF:</label>
+        <input type="text" id="identificadorCPF">
+        <br><br>
+        <label>Nome:</label>
+        <input type="text" id="nomeAtualizar">
+        <br><br>
+        <label>Idade:</label>
+        <input type="number" id="idadeAtualizar">
+        <br><br>
+        <button onclick="buscarDados()">Buscar</button>
+        <button onclick="atualizarDados()">Atualizar</button>
+        <title>Delete</title>
+        <br><br><br><br>
+        <center>
+        <h1>APAGAR</h1>
+        <br><br>
+        <label>CPF:</label>
+        <input type="text" id="identificadorCPFExcluir">
+        <input type="button" onclick="deletarDados()" value="Deletar">
+        <br><br><br>
+
+        <h1>USUÁRIOS CADASTRADOS</h1>
+        <br>
+        <button onclick="listarUsuarios()">Listar Usuários</button>
+        <br><br>
+        <div class="tabela-container">
+        <table>
+        <thead>
+        <tr>
+        <th>ID</th>
+        <th>CPF</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Idade</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        </tr>
+        </thead>
+
+        <tbody id="listaUsuarios">
+        </tbody>
+        </table>
+    </div>
+    <button onclick="sairAdmin()">Sair da Administração</button>
+
+    <br><br>
+    <a href="login.html" class="botao">Voltar para o Login</a>
+    <script src="put.js"></script>
+</center>
+
+        
+</body>
+</html>

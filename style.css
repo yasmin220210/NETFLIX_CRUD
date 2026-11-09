@@ -1,0 +1,220 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Página de boas-vindas */
+.boas-vindas {
+    background-color: #222222;
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 40px 25px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.boas-vindas::before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background-image: url("logotipo-da-netflix.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.boas-vindas h1 {
+    color: #e50914;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+.boas-vindas p {
+    color: #dddddd;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid #000000;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 42px;
+}
+
+/* Caixas de conteúdo */
+.caixa {
+    background-color: #222222;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Campos e textos */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #eeeeee;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 60%;
+    max-width: 350px;
+    padding: 8px;
+    margin: 5px auto 12px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #e50914;
+}
+
+/* Botões */
+button, .botao {
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    margin: 15px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover, .botao:hover {
+    background-color: #b20710;
+    transform: scale(1.03);
+}
+
+/* Resultado da busca */
+#resultado-busca {
+    margin-top: 15px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    color: #eeeeee;
+}
+
+/* Tabela */
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 1400px;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background-color: #222222;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #444444;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e50914;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #2d2d2d;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1c1c1c;
+}
+
+tbody tr:hover {
+    background-color: #383838;
+}
+
+td button {
+    margin: 3px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .caixa {
+        padding: 15px;
+    }
+
+    .boas-vindas {
+        margin: 40px auto;
+        padding: 25px 15px;
+    }
+
+    .boas-vindas h1 {
+        font-size: 30px;
+    }
+
+    .boas-vindas::before {
+        width: 200px;
+        height: 90px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    input {
+        width: 90%;
+    }
+}
